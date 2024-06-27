@@ -1795,8 +1795,8 @@ def send_telegram_message(message):
     message : String
         The message to be send via the telegram bot
     """
-    bot_token = "6552428494:AAHa6gd4x4JT_xVrE8rAPixqMRDAX7wBAQE"
-    chat_id = "45741015"
+    bot_token = "INSERTYOUROWNBOTTOKEN"  if you want to have a telegram bot, otherwise comment out
+    chat_id = "INSERTYOUR CHATID"
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {"chat_id": chat_id, "text": message}
     response = requests.post(url, json=payload)
